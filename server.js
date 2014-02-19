@@ -21,7 +21,9 @@ var config = { "db": {
   },
   'flavor': "regular",
   'debug': false,
-  'accessControl': true
+  'accessControl': {
+    'allowMethods': ['GET', 'PUT', 'POST', 'DELETE']
+  }
 };
 
 var app = module.exports.app = express.createServer();
