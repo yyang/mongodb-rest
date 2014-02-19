@@ -22,7 +22,8 @@ var config = { "db": {
   'flavor': "regular",
   'debug': false,
   'accessControl': {
-    'allowMethods': ['GET', 'PUT', 'POST', 'DELETE']
+    "allowOrigin": "*",
+    "allowMethods": "GET,POST,PUT,DELETE,HEAD,OPTIONS"
   }
 };
 
