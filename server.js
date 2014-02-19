@@ -20,7 +20,8 @@ var config = { "db": {
     'address': "0.0.0.0"
   },
   'flavor': "regular",
-  'debug': true
+  'debug': false,
+  'accessControl': true
 };
 
 var app = module.exports.app = express.createServer();
